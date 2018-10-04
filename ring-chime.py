@@ -54,4 +54,4 @@ class RingChimeNotificationService(BaseNotificationService):
             chime = self.chimes[target]
             if volume and volume != chime.volume:
                 chime.volume = volume
-            chime.test_sound(kind='ding')
+            chime.test_sound(kind=kind)
